@@ -49,8 +49,8 @@ int maxRepOpt1(string text) {
 
 int main(){
 
-    int a = maxRepOpt1("bbbaaabbabbaaaabbbabaaaaabbbabbbbaba");
-    cout<<a<<endl;
+    //int a = maxRepOpt1("bbbaaabbabbaaaabbbabaaaaabbbabbbbaba");
+    cout<<"hello"<<endl;
     system("pause");
     return 0;
 }
