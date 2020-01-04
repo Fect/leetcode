@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e0370a2-026e-412d-a43a-2462d7709b4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0e0370a2-026e-412d-a43a-2462d7709b4b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="597" />
     <option name="y" value="70" />
     <option name="width" value="1943" />
@@ -165,7 +163,7 @@
       <updated>1577621554181</updated>
       <workItem from="1577621557047" duration="1281000" />
       <workItem from="1577633475040" duration="606000" />
-      <workItem from="1578119350810" duration="1996000" />
+      <workItem from="1578119350810" duration="2591000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1577622129320</created>
@@ -192,11 +190,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3883000" />
+    <option name="totallyTimeSpent" value="4478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25737265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

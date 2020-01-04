@@ -12,16 +12,15 @@ string shiftingLetters(string S, vector<int>& shifts) {
     }
 
     for(int i=0;i<leihe.size();i++){
-
         S[i] = (S[i]-'a'+shifts[i])%26+'a';
     }
     return S;
 }
 
 int main(){
-    vector<int> v{3,5,9};
+    //vector<int> v{3,5,9};
 
-    string res = shiftingLetters("abc",v);
-    cout<<res<<endl;
+    //string res = shiftingLetters("abc",v);
+    //cout<<res<<endl;
     system("pause");
 }
