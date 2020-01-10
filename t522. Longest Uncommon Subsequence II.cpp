@@ -36,7 +36,7 @@ int findLUSlength(vector<string>& strs) {
         int index = 0;
         if(ve[i].second==1){
             for(;index<i;index++){
-                if(isSub()){
+                if(isSub(ve[i].first,ve[index].first)){
                     break;
                 }
             }
