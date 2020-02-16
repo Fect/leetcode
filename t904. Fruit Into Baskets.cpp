@@ -22,5 +22,5 @@ int totalFruit(vector<int>& tree) {
 int main(){
     vector<int> dd{1,2,3,2,2};
     int res = totalFruit(dd);
-    system("pause");
+    //system("pause");
 }
