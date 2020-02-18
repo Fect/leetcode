@@ -23,5 +23,5 @@ int numSubarraysWithSum(vector<int>& A, int S) {
 int main(){
     vector<int> dp{0,0,0,0,0};
     int res = numSubarraysWithSum(dp,0);
-    //system("pause");
+    system("pause");
 }
