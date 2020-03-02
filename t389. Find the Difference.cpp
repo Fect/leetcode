@@ -7,7 +7,7 @@ char findTheDifference(string s, string t) {
     for(int i=0;i<t.size();i++){
         res+=t[i];
         if(i<s.size()){
-            res-=s[i]
+            res-=s[i];
         }
     }
 
