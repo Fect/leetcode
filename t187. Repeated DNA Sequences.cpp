@@ -15,7 +15,7 @@ vector<string> findRepeatedDnaSequences(string s) {
     for(int i=9;i<s.size();i++){
         cur = ((cur&mask)<<3)|(s[i]&7);
         if(ma.count(cur)){
-            res.push_back();
+            res.push_back(cur);
         }
     }
 
