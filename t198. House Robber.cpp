@@ -22,5 +22,5 @@ int rob(vector<int>& nums) {
         //res = max(res,dp[i]);
     }
 
-    return res;
+    return dp.back();
 }
