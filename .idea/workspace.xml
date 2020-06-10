@@ -54,10 +54,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/t648/ReplaceWords.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#227#235#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://D:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/ClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8455">
+            <state relative-caret-position="8417">
               <caret line="508" selection-start-line="508" selection-end-line="508" />
             </state>
           </provider>
@@ -136,9 +135,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="811" />
-    <option name="y" value="56" />
-    <option name="width" value="1944" />
+    <option name="x" value="810" />
+    <option name="y" value="55" />
+    <option name="width" value="1945" />
     <option name="height" value="940" />
   </component>
   <component name="ProjectId" id="1Y0i1cG6qHKu034h0cDRifXIwyU" />
@@ -148,45 +147,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="t648" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,6 +238,7 @@
       <workItem from="1583378849272" duration="2330000" />
       <workItem from="1583661219291" duration="985000" />
       <workItem from="1583804507062" duration="603000" />
+      <workItem from="1587314271502" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1577622129320</created>
@@ -308,12 +272,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9227000" />
+    <option name="totallyTimeSpent" value="9243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27479893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27882037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -512,7 +476,7 @@
     </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8455">
+        <state relative-caret-position="8417">
           <caret line="508" selection-start-line="508" selection-end-line="508" />
         </state>
       </provider>
@@ -520,10 +484,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/t648/ReplaceWords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#227#235#0" expanded="true" />
           </folding>
         </state>
       </provider>
