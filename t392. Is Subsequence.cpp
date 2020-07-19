@@ -2,18 +2,19 @@
 using namespace std;
 
 bool isSubsequence(string s, string t) {
-    int ns = s.size();
-    int nt = t.size();
 
-    int start = 0;
-    for(int i=0;i<nt;i++){
-        if(s[start]==t[i]){
-            start++;
+    int t1 = 0;
+    int t2 = 0;
+
+    while(t1<s.size()&&t2<t.size()){
+        if(s[t1]==t[t2]){
+            t1++;
         }
+        t2++;
     }
-    if(start==ns){
+
+    if(t1>=s.size()){
         return true;
     }
     return false;
-
 }
