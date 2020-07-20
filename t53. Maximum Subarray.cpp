@@ -2,16 +2,20 @@
 using namespace std;
 
 int maxSubArray(vector<int>& nums) {
-
-    int cu = 0;
-    int res = INT8_MIN;
-    for(int i=0;i<nums.size();i++){
-        if(cu+nums[i]<0){
-            cu = nums[i];
-        }else{
-            cu+=nums[i];
-            res = max(res,cu);
-        }
+    int n = nums.size();
+    if(n<=0){
+        return 0;
     }
+    int res = nums[0];
+    int cur = nums[0];
+    for(int i=1;i<n;i++){
+        if(cur+nums[i]<nums[i]){
+            cur = nums[i];
+        }else{
+            cur+=nums[i];
+        }
+        res = max(cur,res);
+    }
+
     return res;
 }
