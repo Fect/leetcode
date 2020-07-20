@@ -2,18 +2,18 @@
 using namespace std;
 
 class NumArray {
-private:
-    vector<int> dp;
 public:
+    vector<int> rangSum;
     NumArray(vector<int>& nums) {
-        int su = 0;
-        for(int i=0;i<=nums.size();i++){
-            dp.push_back(su);
-            su+=nums[i];
+        int s1 = 0;
+        rangSum.push_back(s1);
+        for(int i=0;i<nums.size();i++){
+            s1+=nums[i];
+            rangSum.push_back(s1);
         }
     }
     
     int sumRange(int i, int j) {
-        return dp[j+1]-dp[i-1];
+        return rangSum[j+1]-rangSum[i];
     }
 };
