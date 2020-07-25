@@ -2,20 +2,28 @@
 using namespace std;
 
 int countSubstrings(string s) {
-    int res=0;
-    int n = s.size();
-    vector<vector<bool>> dp(n,vector<bool>(n,false));
 
-    for(int i=0;i<s.size();i++){
-        dp[i][i] = true;
+    int n = s.size();
+    vector<vector<int>> dp(n,vector<int>(n,0));
+
+    int res = 0;
+    for(int i=0;i<n;i++){
+        dp[i][i] = 1;
         res+=1;
-        for(int j=i+1;j<s.size();j++){
+        for(int j=i-1;j>=0;j--){
             if(s[i]==s[j]){
-                dp[i][j] = true;
+                if(i-j<3){
+                    dp[j][i] = 1;
+                }else if(dp[j+1][i-1]){
+                    dp[j][i] = 1;
+                }
+            }else{
+                dp[j][i] = 0;
+            }
+            if(dp[j][i]){
                 res+=1;
             }
         }
     }
-
     return res;
 }
