@@ -21,7 +21,7 @@ int longestStrChain(vector<string>& words) {
     vector<int> dp(n,1);
     auto cmp = [](string& a,string& b){
         return a.size()<b.size();
-    }
+    };
     sort(words.begin(),words.end(),cmp);
     int res = 0;
     for(int i=1;i<n;i++){
@@ -32,4 +32,5 @@ int longestStrChain(vector<string>& words) {
             res = max(res,dp[i]);
         }
     }
+    return res;
 }
