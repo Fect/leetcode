@@ -3,45 +3,46 @@ using namespace std;
 
 int maxSumDivThree(vector<int>& nums) {
 
-    vector<int> d1;
-    vector<int> d2;
+    vector<int> dp1;
+    vector<int> dp2;
 
-    int su = 0;
-    for(auto num:nums){
-        su+=num;
-        if(num%3==1){
-            d1.push_back(num);
+    int sum = 0;
+    for(int i=0;i<nums.size();i++){
+        sum += nums[i];
+        if(nums[i]%3==1){
+            dp1.push_back(nums[i]);
         }
-        if(num%3==2){
-            d2.push_back(num);
+        else if(nums[i]%3==2){
+            dp2.push_back(nums[i]);
         }
     }
-
-    sort(d1.begin(),d1.end());
-    sort(d2.begin(),d2.end());
-
-    if(su%3==0)
-        return su;
-
-    if(su%3==1){
-        int r1=0,r2=0;
-        if(d1.size()>0){
-            r1 = su-d1[0];
-        }
-        if(d2.size()>1){
-            r2 = su-d2[0]-d2[1];
-        }
-        return max(r1,r2);
+    sort(dp1.begin(),dp1.end());
+    sort(dp2.begin(),dp2.end());
+    if(sum%3==0){
+        return sum;
     }
-    if(su%3==2){
-        int r1=0,r2=0;
-        if(d2.size()>0){
-            r2 = su-d2[0];
+
+    if(sum%3==1){
+        int t1=0,t2=0;
+        if(dp1.size()>0){
+            t1 = sum-dp1[0];
         }
-        if(d1.size()>1){
-            r1 = su-d1[0]-d1[1];
+        if(dp2.size()>1){
+            t2 = sum-dp2[0]-dp2[1];
         }
-        return max(r1,r2);
+        return max(t1,t2);
     }
-    return su;
+
+    if(sum%3==2){
+        int t1=0,t2=0;
+        if(dp2.size()>0){
+            t1 = sum-dp2[0];
+        }
+        if(dp1.size()>1){
+            t2 = sum-dp1[0]-dp1[1];
+        }
+        return max(t1,t2);
+    }
+
+    return sum;
 }
