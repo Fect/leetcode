@@ -6,34 +6,25 @@ import java.util.Map;
 public class TargetSum {
 
     public static int findTargetSumWays(int[] nums, int S) {
-        int res = 0;
-
-        Map<Integer,Integer> ma = new HashMap<Integer,Integer>();
-
-        ma.put(0,1);
+        int sum = 0;
         for(int i=0;i<nums.length;i++){
-            Map<Integer,Integer> ma1 = new HashMap<Integer,Integer>();
-            for(Integer idx:ma.keySet()) {
-                int cut = ma.get(idx);
-                if(ma1.containsKey(idx + nums[i])){
-                    ma1.put(idx + nums[i], ma1.get(idx + nums[i]) + cut);
-                }else{
-                    ma1.put(idx + nums[i], cut);
-                }
-
-                if(ma1.containsKey(idx - nums[i])){
-                    ma1.put(idx - nums[i], ma1.get(idx - nums[i]) + cut);
-                }else{
-                    ma1.put(idx - nums[i], cut);
-                }
-            }
-            ma = ma1;
+            sum+=nums[i];
         }
-        if(ma.containsKey(S)){
-            return ma.get(S);
-        }else{
+        int target = sum+S;
+        if(sum<S||target%2!=0){
             return 0;
         }
+        target = target/2;
+        int[] dp = new int[target+1];
+
+        dp[0] = 1;
+        for(int i=0;i<nums.length;i++){
+            for(int j=target;j>=nums[i];j--){
+                dp[j]+=dp[j-nums[i]];
+            }
+        }
+
+        return dp[target];
     }
 
     public static void main(String[] args){

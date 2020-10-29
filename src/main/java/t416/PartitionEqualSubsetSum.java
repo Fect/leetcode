@@ -11,13 +11,13 @@ public class PartitionEqualSubsetSum {
             return false;
         }
         int target = sum/2;
-        boolean[] dp = new boolean[target+1];
-        dp[0] = true;
+        int[] dp = new int[target+1];
+        dp[0] = 1;
         for(int num:nums){
             for(int i=target;i>=num;i--){
-                dp[i] = dp[i]|dp[i-num];
+                dp[i] = dp[i]+dp[i-num];
             }
         }
-        return dp[target];
+        return dp[target]>0;
     }
 }
